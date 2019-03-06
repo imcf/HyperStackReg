@@ -91,7 +91,7 @@ public class HyperStackReg_	implements PlugIn {
 		gd.setInsets(0, 0, 0);
 		gd.addMessage("Click \"Help\" button below to go to HyperStackReg website,\nfor detailed instructions on how to use this plugin.");
 		final String[] transformationItem = {"Translation", "Rigid Body", "Scaled Rotation",	"Affine"};
-		gd.addChoice("Transformation:", transformationItem, "Affine");
+		gd.addChoice("Transformation:", transformationItem, "Rigid Body");
 		gd.setInsets(0, 0, 0);
 		gd.addMessage("Choose channels for transformation matrix computation:");
 
