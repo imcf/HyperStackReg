@@ -1,7 +1,9 @@
 # VS Code files
 /.vscode/tasks.json
 
+# Java / Maven files
 /.classpath
 /.project
 /.settings/
 /target/
+*.class
