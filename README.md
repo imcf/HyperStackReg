@@ -18,7 +18,7 @@ Just like StackReg, HyperStackReg requires that another plugin called TurboReg s
 
 ## How the plugin works
 
-**Step 1:** User opens a multi-channel hyperstack (C>1, Z>=1, T>1) and runs the HyperStackReg_ plugin. In a pop-up dialog window, user then selects the transformation type (Translation, Rigid body, Scaled rotation, Affine) and the channels to be used for transformation matrix computation. All the channels are selected, by default. Behind-the-scene processing details are printed in the Log window.
+**Step 1:** User opens a multi-channel hyperstack (C>1, Z>=1, T>1) and runs the `HyperStackReg` plugin. In a pop-up dialog window, user then selects the transformation type (Translation, Rigid body, Scaled rotation, Affine) and the channels to be used for transformation matrix computation. All the channels are selected, by default. Behind-the-scene processing details are printed in the Log window.
 
 **Step 2:** The plugin duplicates the user-selected channels (and the corresponding Z and T frames) into a hyperstack and merges those channels into an RGB hyperstack (C=1, Z>=1, T>1). No RGB flattening is done, if user selects a single channel for transformation matrix computation (Step 1).
 
