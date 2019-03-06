@@ -30,7 +30,7 @@ Just like StackReg, HyperStackReg requires that another plugin called TurboReg s
 
 ## Batch processing
 
-Plugin is macro recordable, so a folder full of files can be processed in batch mode. Check the [HyperStackReg_processFolder.ijm](HyperStackReg_processFolder.ijm) macro for example.
+Plugin is macro recordable, so a folder full of files can be processed in batchmode. Check the [process-folder.ijm][macro] macro for example.
 
 ## Acknowledgements
 
@@ -51,5 +51,6 @@ See the [LICENSE](LICENSE) file
 
 [stackreg]: http://bigwww.epfl.ch/thevenaz/stackreg/
 [multisr]: http://bradbusse.net/downloads.html
+[macro]: extra/scripts/process-folder.ijm
 [condeelis_lab]: https://www.einstein.yu.edu/labs/john-condeelis
 [ved]: mailto:vedsharma@gmail.com
