@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>14.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>ch.unibas.biozentrum</groupId>
+	<artifactId>HyperStackReg_</artifactId>
+	<version>5.6.1-SNAPSHOT</version>
+
+	<name>HyperStackReg_</name>
+	<description>An ImageJ1 plugin for running StackReg on HyperStacks.</description>
+	<url>https://www.biozentrum.unibas.ch/imcf</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>University of Basel</name>
+		<url>http://www.unibas.ch/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License (GPL) v3+</name>
+			<url>https://www.gnu.org/licenses/gpl.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Ved Sharma</name>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>ehrenfeu</id>
+			<name>Niko Ehrenfeuchter</name>
+			<url>https://imagej.net/User:Ehrenfeu</url>
+			<roles>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<!--
+		NB: Need at least one element to override the parent.
+		See: https://issues.apache.org/jira/browse/MNG-5220
+		-->
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/HyperStackReg</connection>
+		<developerConnection>scm:git:git@github.com:imagej/HyperStackReg</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagej/HyperStackReg</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/HyperStackReg/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>ch.unibas.biozentrum</package-name>
+		<main-class>ch.unibas.biozentrum.HyperStackReg_</main-class>
+		<license.licenseName>gpl_v3</license.licenseName>
+		<license.copyrightOwners>Ved Sharma</license.copyrightOwners>
+		<maven.source.skip>true</maven.source.skip>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>

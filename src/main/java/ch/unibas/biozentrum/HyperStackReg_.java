@@ -10,6 +10,8 @@ Author: Ved P Sharma (vedsharma@gmail.com)
 Albert Einstein College of Medicine, New York
 */
 
+package ch.unibas.biozentrum;
+
 // ImageJ
 import ij.CompositeImage;
 import ij.IJ;
