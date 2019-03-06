@@ -2,11 +2,19 @@
 
 <img src="https://github.com/ved-sharma/HyperStackReg/blob/master/Data/Example_hyperstack-before_and_after.gif" alt="Example movie">
 
-**Movie:** A 16-bit multi-channel (blue, green and red) hyperstack movie before and after HyperStackReg registration. The intravital multiphoton movie shows green and red labeled cells moving in vivo in living mice. Extracellular matrix collagen fibers are shown in blue.
+**Movie:** A 16-bit multi-channel (blue, green and red) hyperstack movie before
+and after HyperStackReg registration. The intravital multiphoton movie shows
+green and red labeled cells moving in vivo in living mice. Extracellular matrix
+collagen fibers are shown in blue.
 
 ## Rationale
 
-A single channel time-lapse, Z-stack (C=1, Z>=1, T>1) can be aligned using [StackReg][stackreg] plugin. HyperStackReg plugin builds on the functionalities of StackReg to align images in a multi-channel hyperstack (C>1, Z>=1, T>1). The main idea of the HyperStackReg plugin is to apply the same transformation matrix to each channel of a hyperstack, so that all the channels of a hyperstack are registered with respect to each other.
+A single channel time-lapse, Z-stack (C=1, Z>=1, T>1) can be aligned using
+[StackReg][stackreg] plugin. HyperStackReg plugin builds on the functionalities
+of StackReg to align images in a multi-channel hyperstack (C>1, Z>=1, T>1). The
+main idea of the HyperStackReg plugin is to apply the same transformation matrix
+to each channel of a hyperstack, so that all the channels of a hyperstack are
+registered with respect to each other.
 
 ## Installation
 
@@ -14,31 +22,49 @@ TODO: update site and github releases!
 
 ## Requires
 
-Just like StackReg, HyperStackReg requires that another plugin called TurboReg should be installed. Please follow directions described on the [StackReg page][stackreg].
+Just like StackReg, HyperStackReg requires that another plugin called TurboReg
+should be installed. Please follow directions described on the
+[StackReg page][stackreg].
 
 ## How the plugin works
 
-**Step 1:** User opens a multi-channel hyperstack (C>1, Z>=1, T>1) and runs the `HyperStackReg` plugin. In a pop-up dialog window, user then selects the transformation type (Translation, Rigid body, Scaled rotation, Affine) and the channels to be used for transformation matrix computation. All the channels are selected, by default. Behind-the-scene processing details are printed in the Log window.
+**Step 1:** User opens a multi-channel hyperstack (C>1, Z>=1, T>1) and runs the
+`HyperStackReg` plugin. In a pop-up dialog window, user then selects the
+transformation type (Translation, Rigid body, Scaled rotation, Affine) and the
+channels to be used for transformation matrix computation. All the channels are
+selected, by default. Behind-the-scene processing details are printed in the Log
+window.
 
-**Step 2:** The plugin duplicates the user-selected channels (and the corresponding Z and T frames) into a hyperstack and merges those channels into an RGB hyperstack (C=1, Z>=1, T>1). No RGB flattening is done, if user selects a single channel for transformation matrix computation (Step 1).
+**Step 2:** The plugin duplicates the user-selected channels (and the
+corresponding Z and T frames) into a hyperstack and merges those channels into
+an RGB hyperstack (C=1, Z>=1, T>1). No RGB flattening is done, if user selects a
+single channel for transformation matrix computation (Step 1).
 
-**Step 3:** The resulting hyperstack is then aligned for each Z and T; and transformation matrices are stored in a text file. The duplicated hyperstack is closed.
+**Step 3:** The resulting hyperstack is then aligned for each Z and T; and
+transformation matrices are stored in a text file. The duplicated hyperstack is
+closed.
 
-**Step 4:** Transformation matrices are read from the text file and applied to the first channel (C=1) of the original hyperstack. This process is repeated for all the channels (2nd, 3rd, 4th...so on) of the original hyperstack.
+**Step 4:** Transformation matrices are read from the text file and applied to
+the first channel (C=1) of the original hyperstack. This process is repeated for
+all the channels (2nd, 3rd, 4th...so on) of the original hyperstack.
 
 **Step 5:** All the registered channels are combined into a hyperstack.
 
 ## Batch processing
 
-Plugin is macro recordable, so a folder full of files can be processed in batchmode. Check the [process-folder.ijm][macro] macro for example.
+Plugin is macro recordable, so a folder full of files can be processed in
+batchmode. Check the [process-folder.ijm][macro] macro for example.
 
 ## Acknowledgements
 
-This plugin builts on the functionalities of other plugins: [StackReg][stackreg] and [MultiStackReg][multisr].
+This plugin builts on the functionalities of other plugins: [StackReg][stackreg]
+and [MultiStackReg][multisr].
 
 ## Author
 
-HyperStackReg plugin was created by [Ved Sharma][ved] during 2015-16, while in the [John Condeelis laboratory][condeelis_lab] at Albert Einstein College of Medicine.
+HyperStackReg plugin was created by [Ved Sharma][ved] during 2015-16, while in
+the [John Condeelis laboratory][condeelis_lab] at Albert Einstein College of
+Medicine.
 
 ## How to cite
 
