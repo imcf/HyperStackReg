@@ -6,7 +6,7 @@
 
 ## Rationale
 
-A single channel time-lapse, Z-stack (C=1, Z>=1, T>1) can be aligned using [StackReg](http://bigwww.epfl.ch/thevenaz/stackreg/) plugin. HyperStackReg plugin builds on the functionalities of StackReg to align images in a multi-channel hyperstack (C>1, Z>=1, T>1). The main idea of the HyperStackReg plugin is to apply the same transformation matrix to each channel of a hyperstack, so that all the channels of a hyperstack are registered with respect to each other.
+A single channel time-lapse, Z-stack (C=1, Z>=1, T>1) can be aligned using [StackReg][stackreg] plugin. HyperStackReg plugin builds on the functionalities of StackReg to align images in a multi-channel hyperstack (C>1, Z>=1, T>1). The main idea of the HyperStackReg plugin is to apply the same transformation matrix to each channel of a hyperstack, so that all the channels of a hyperstack are registered with respect to each other.
 
 ## Installation
 
@@ -14,7 +14,7 @@ TODO: update site and github releases!
 
 ## Requires
 
-Just like StackReg, HyperStackReg requires that another plugin called TurboReg should be installed. Please follow directions described on the [StackReg page](http://bigwww.epfl.ch/thevenaz/stackreg/).
+Just like StackReg, HyperStackReg requires that another plugin called TurboReg should be installed. Please follow directions described on the [StackReg page][stackreg].
 
 ## How the plugin works
 
@@ -34,11 +34,11 @@ Plugin is macro recordable, so a folder full of files can be processed in batch 
 
 ## Acknowledgements
 
-This plugin builts on the functionalities of other plugins: [StackReg](http://bigwww.epfl.ch/thevenaz/stackreg/) and [MultiStackReg](http://bradbusse.net/downloads.html)
+This plugin builts on the functionalities of other plugins: [StackReg][stackreg] and [MultiStackReg][multisr].
 
 ## Author
 
-HyperStackReg plugin was created by [Ved Sharma](mailto:vedsharma@gmail.com) during 2015-16, while in the [John Condeelis laboratory](https://www.einstein.yu.edu/labs/john-condeelis/) at Albert Einstein College of Medicine.
+HyperStackReg plugin was created by [Ved Sharma][ved] during 2015-16, while in the [John Condeelis laboratory][condeelis_lab] at Albert Einstein College of Medicine.
 
 ## How to cite
 
@@ -47,3 +47,9 @@ HyperStackReg plugin was created by [Ved Sharma](mailto:vedsharma@gmail.com) dur
 ## License
 
 See the [LICENSE](LICENSE) file
+
+
+[stackreg]: http://bigwww.epfl.ch/thevenaz/stackreg/
+[multisr]: http://bradbusse.net/downloads.html
+[condeelis_lab]: https://www.einstein.yu.edu/labs/john-condeelis
+[ved]: mailto:vedsharma@gmail.com
