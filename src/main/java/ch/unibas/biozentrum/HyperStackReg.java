@@ -5,10 +5,14 @@ starting version: 5.5
 Changes in version 5.6
 	Bug fix - made the HyperStackReg_ class name generic by removing the version number
 	Pressing the Help button will now take the user to GitHub website instead of my old Google site
-
-Author: Ved P Sharma (vedsharma@gmail.com)
-Albert Einstein College of Medicine, New York
 */
+
+/**
+ * StackReg for Multi-Channel / Multi-Z Hyperstacks
+ *
+ * @author Ved P Sharma (vedsharma@gmail.com), Albert Einstein College of Medicine, New York
+ * @author Niko Ehrenfeuchter (nikolaus.ehrenfeuchter@unibas.ch), IMCF, Biozentrum, University of Basel, Switzerland
+ */
 
 package ch.unibas.biozentrum;
 
