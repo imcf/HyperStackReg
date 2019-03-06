@@ -1,12 +1,3 @@
-/*
-Version 5.6: December 13, 2018
-starting version: 5.5
-
-Changes in version 5.6
-	Bug fix - made the HyperStackReg_ class name generic by removing the version number
-	Pressing the Help button will now take the user to GitHub website instead of my old Google site
-*/
-
 /**
  * StackReg for Multi-Channel / Multi-Z Hyperstacks
  *
