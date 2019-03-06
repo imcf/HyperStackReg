@@ -21,9 +21,9 @@ for (i = 0; i < filenames.length; i++) {
 		open(currFile);
 		count++;
 // selecting all channels		
-		run("HyperStackReg ", "transformation=Affine show");
+		run("HyperStackReg", "transformation=Affine show");
 // Use the following for selecting specific channels
-//		run("HyperStackReg ", "transformation=Affine channel1 channel3 channel4 show");
+//		run("HyperStackReg", "transformation=Affine channel1 channel3 channel4 show");
 		saveAs("Tiff", dirD+getTitle());
 		close(); // close registered file
 		close(); // close original file

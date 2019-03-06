@@ -44,7 +44,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.String; // added this to use function lastIndexOf to name the final hyperstack
 
-public class HyperStackReg_	implements PlugIn {
+public class HyperStackReg	implements PlugIn {
 	private String version = "5.6";
 	private static final double TINY = 	(double)Float.intBitsToFloat((int)0x33FFFFFF);
 	private String loadPathAndFilename="";
@@ -177,7 +177,7 @@ public class HyperStackReg_	implements PlugIn {
 		String path=savePath+saveFile;;
 		try{
 			FileWriter fw= new FileWriter(path);
-			fw.write("HyperStackReg_v"+version+" Transformation File\n");
+			fw.write("HyperStackReg v"+version+" Transformation File\n");
 			fw.write("Author: Ved P Sharma\n");
 			fw.write("Albert Einstein College of Medicine, New York\n");
 			fw.close();
@@ -2321,4 +2321,4 @@ public class HyperStackReg_	implements PlugIn {
 		return(source);
 	} /* end registerSlice */
 
-} /* end class HyperStackReg_*/
+} /* end class HyperStackReg*/

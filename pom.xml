@@ -13,10 +13,10 @@
 	</parent>
 
 	<groupId>ch.unibas.biozentrum</groupId>
-	<artifactId>HyperStackReg_</artifactId>
+	<artifactId>HyperStackReg</artifactId>
 	<version>5.6.1-SNAPSHOT</version>
 
-	<name>HyperStackReg_</name>
+	<name>HyperStackReg</name>
 	<description>An ImageJ1 plugin for running StackReg on HyperStacks.</description>
 	<url>https://www.biozentrum.unibas.ch/imcf</url>
 	<inceptionYear>2018</inceptionYear>
@@ -85,7 +85,7 @@
 
 	<properties>
 		<package-name>ch.unibas.biozentrum</package-name>
-		<main-class>ch.unibas.biozentrum.HyperStackReg_</main-class>
+		<main-class>ch.unibas.biozentrum.HyperStackReg</main-class>
 		<license.licenseName>gpl_v3</license.licenseName>
 		<license.copyrightOwners>Ved Sharma</license.copyrightOwners>
 		<maven.source.skip>true</maven.source.skip>
