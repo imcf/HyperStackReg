@@ -88,7 +88,6 @@
 		<main-class>ch.unibas.biozentrum.HyperStackReg</main-class>
 		<license.licenseName>gpl_v3</license.licenseName>
 		<license.copyrightOwners>Ved Sharma</license.copyrightOwners>
-		<maven.source.skip>true</maven.source.skip>
 	</properties>
 
 	<dependencies>
