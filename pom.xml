@@ -70,14 +70,14 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/imagej/HyperStackReg</connection>
-		<developerConnection>scm:git:git@github.com:imagej/HyperStackReg</developerConnection>
+		<connection>scm:git:git://github.com/imcf/HyperStackReg</connection>
+		<developerConnection>scm:git:git@github.com:imcf/HyperStackReg</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/HyperStackReg</url>
+		<url>https://github.com/imcf/HyperStackReg</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/HyperStackReg/issues</url>
+		<url>https://github.com/imcf/HyperStackReg/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
